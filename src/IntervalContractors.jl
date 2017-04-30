@@ -7,7 +7,8 @@ export plus_rev, minus_rev,
         power_rev,
         sqr_rev,
         sqrt_rev,
-        sin_rev, cos_rev
+        sin_rev, cos_rev,
+        exp_rev, log_rev
 
 using IntervalArithmetic
 using Compat
@@ -22,6 +23,7 @@ Base.:∩(f::Function, g::Function) = X -> ( f(X) ∩ g(X) )  # or f(g(X)) for c
 include("arithmetic.jl")
 include("transformations.jl")
 include("powers.jl")
+include("exponential.jl")
 include("trig.jl")
 
 
@@ -37,7 +39,7 @@ const rev_ops = Dict(
                     :()    => :()   # empty operation
                     )
 
-for f in (:sqrt, :sqr, :sin, :cos)
+for f in (:sqrt, :sqr, :sin, :cos, :exp, :log)
     rev_ops[f] = Symbol(f, "_rev")
 end
 
