@@ -1,0 +1,227 @@
+var documenterSearchIndex = {"docs": [
+
+{
+    "location": "index.html#",
+    "page": "Home",
+    "title": "Home",
+    "category": "page",
+    "text": ""
+},
+
+{
+    "location": "index.html#IntervalContractors.abs_rev-Tuple{Any,Any}",
+    "page": "Home",
+    "title": "IntervalContractors.abs_rev",
+    "category": "Method",
+    "text": "Reverse abs\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.asin_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.asin_rev",
+    "category": "Method",
+    "text": "Reverse asin.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.cos_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.cos_rev",
+    "category": "Method",
+    "text": "cos_rev(y::Interval, x::Interval)\n\nReverse function for cos:\n\nfind the subset of x such that y = cos(x) for the given y.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.div_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.div_rev",
+    "category": "Method",
+    "text": "Reverse division\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.minus_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.minus_rev",
+    "category": "Method",
+    "text": "Reverse minus\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.mul_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.mul_rev",
+    "category": "Method",
+    "text": "Reverse multiplication\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.mul_rev_IEEE1788-Tuple{Any,Any,Any}",
+    "page": "Home",
+    "title": "IntervalContractors.mul_rev_IEEE1788",
+    "category": "Method",
+    "text": "According to the IEEE-1788 standard:\n\n∘_rev1(b, c, x) is the subset of x such that x ∘ b is defined and in c;\n∘_rev2(a, c, x) is the subset of x such that a ∘ x is defined and in c\n\nWhen ∘ is commutative, these agree and we write ∘_rev(b, c, x).\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.plus_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.plus_rev",
+    "category": "Method",
+    "text": "Reverse plus\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.power_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval,Integer}",
+    "page": "Home",
+    "title": "IntervalContractors.power_rev",
+    "category": "Method",
+    "text": "Reverse power\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.sin_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.sin_rev",
+    "category": "Method",
+    "text": "sin_rev(y::Interval, x::Interval)\n\nReverse function for sin:\n\nfind the subset of x such that y = sin(x) for the given y.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.sqr_rev-Tuple{Any,Any}",
+    "page": "Home",
+    "title": "IntervalContractors.sqr_rev",
+    "category": "Method",
+    "text": "Reverse sqr\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.sqrt_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.sqrt_rev",
+    "category": "Method",
+    "text": "Reverse square root\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.tan_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.tan_rev",
+    "category": "Method",
+    "text": "tan_rev(y::Interval, x::Interval)\n\nReverse function for tan:\n\nfind the subset of x such that y = tan(x) for the given y.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.reverse_operations",
+    "page": "Home",
+    "title": "IntervalContractors.reverse_operations",
+    "category": "Constant",
+    "text": "Dictionary mapping functions to their reverse functions.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.cos!-Tuple{IntervalArithmetic.IntervalBox}",
+    "page": "Home",
+    "title": "IntervalContractors.cos!",
+    "category": "Method",
+    "text": "cos!(X::IntervalBox)\n\nContractor for cos. Takes an IntervalBox containing the x and y component intervals. Returns an IntervalBox contracted down to the set y = cos(x).\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.cos_main-Tuple{IntervalArithmetic.IntervalBox}",
+    "page": "Home",
+    "title": "IntervalContractors.cos_main",
+    "category": "Method",
+    "text": "Contractor for main branch of cos, from x = 0 to π.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.integer_contractor-Tuple{IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.integer_contractor",
+    "category": "Method",
+    "text": "integer_contractor(x::Interval)\n\nReturn the integers enclosed in the interval x.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.periodise-Tuple{Any,Any}",
+    "page": "Home",
+    "title": "IntervalContractors.periodise",
+    "category": "Method",
+    "text": "Periodize the contractor C\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.reflect_x-Tuple{Any}",
+    "page": "Home",
+    "title": "IntervalContractors.reflect_x",
+    "category": "Method",
+    "text": "Reflect in mirror at position x_mirror\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.sin!-Tuple{IntervalArithmetic.IntervalBox}",
+    "page": "Home",
+    "title": "IntervalContractors.sin!",
+    "category": "Method",
+    "text": "sin!(X::IntervalBox)\n\nContractor for sin. Takes an IntervalBox containing the x and y component intervals. Returns an IntervalBox contracted down to the set y = sin(x).\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.sin_main-Tuple{IntervalArithmetic.IntervalBox}",
+    "page": "Home",
+    "title": "IntervalContractors.sin_main",
+    "category": "Method",
+    "text": "Contractor for \"main branch\" of sin, from x = -π/2 to π/2.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.square_pos-Tuple{IntervalArithmetic.IntervalBox}",
+    "page": "Home",
+    "title": "IntervalContractors.square_pos",
+    "category": "Method",
+    "text": "Contractor for y = x^2, x >= 0\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.symmetrise-Tuple{Any,Any}",
+    "page": "Home",
+    "title": "IntervalContractors.symmetrise",
+    "category": "Method",
+    "text": "Symmetric part of a Contractor, via an involution op (i.e. such that inv(op) == op).\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.tan_main-Tuple{IntervalArithmetic.IntervalBox}",
+    "page": "Home",
+    "title": "IntervalContractors.tan_main",
+    "category": "Method",
+    "text": "Contractor for \"main branch\" of tan, from x = -π/2 to π/2.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.translate-Tuple{Any,Any}",
+    "page": "Home",
+    "title": "IntervalContractors.translate",
+    "category": "Method",
+    "text": "Translation of a Contractor C by α. Uses inv(op) ∘ C ∘ op\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.translate-Tuple{Any}",
+    "page": "Home",
+    "title": "IntervalContractors.translate",
+    "category": "Method",
+    "text": "translate(α)\n\nReturns a function that shifts (translates) a 2D IntervalBox in x (the first coordinate).\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.jl-1",
+    "page": "Home",
+    "title": "IntervalContractors.jl",
+    "category": "section",
+    "text": "Documentation for IntervalContractors.jlModules = [IntervalContractors]"
+},
+
+]}
