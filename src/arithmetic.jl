@@ -147,7 +147,16 @@ According to the IEEE-1788 standard:
 When `∘` is commutative, these agree and we write `∘_rev(b, c, x)`.
 """
 
-function mul_rev_IEEE1788(b, c, x)   # c = b*x
+function mul_rev_IEEE1788(b, c, x)   # c = b * x
+
+    if isnai(b) || isnai(c)
+        return nai(x)
+    end
+
+    if 0 ∈ b && 0 ∈ c
+        return x   # anything * 0 == 0
+    end
+
     return x ∩ (c / b)
 end
 
