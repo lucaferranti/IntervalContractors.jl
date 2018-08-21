@@ -17,11 +17,51 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "index.html#IntervalContractors.acos_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.acos_rev",
+    "category": "method",
+    "text": "Reverse acos.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.acosh_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.acosh_rev",
+    "category": "method",
+    "text": "Reverse function for acosh.\n\n\n\n"
+},
+
+{
     "location": "index.html#IntervalContractors.asin_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
     "page": "Home",
     "title": "IntervalContractors.asin_rev",
     "category": "method",
     "text": "Reverse asin.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.asinh_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.asinh_rev",
+    "category": "method",
+    "text": "Reverse function for asinh.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.atan_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.atan_rev",
+    "category": "method",
+    "text": "Reverse atan.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.atanh_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.atanh_rev",
+    "category": "method",
+    "text": "Reverse function for atanh.\n\n\n\n"
 },
 
 {
@@ -33,11 +73,35 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "index.html#IntervalContractors.cosh_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.cosh_rev",
+    "category": "method",
+    "text": "Reverse function for cosh.\n\n\n\n"
+},
+
+{
     "location": "index.html#IntervalContractors.div_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
     "page": "Home",
     "title": "IntervalContractors.div_rev",
     "category": "method",
     "text": "Reverse division\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.exp10_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.exp10_rev",
+    "category": "method",
+    "text": "Reverse function for exp10.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.exp2_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.exp2_rev",
+    "category": "method",
+    "text": "Reverse function for exp2.\n\n\n\n"
 },
 
 {
@@ -49,11 +113,67 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "index.html#IntervalContractors.expm1_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.expm1_rev",
+    "category": "method",
+    "text": "Reverse function for expm1.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.inv_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.inv_rev",
+    "category": "method",
+    "text": "Reverse inverse\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.log10_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.log10_rev",
+    "category": "method",
+    "text": "Reverse function for log10: y = log10(x)\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.log1p_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.log1p_rev",
+    "category": "method",
+    "text": "Reverse function for log1p: y = log1p(x)\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.log2_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.log2_rev",
+    "category": "method",
+    "text": "Reverse function for log2: y = log2(x)\n\n\n\n"
+},
+
+{
     "location": "index.html#IntervalContractors.log_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
     "page": "Home",
     "title": "IntervalContractors.log_rev",
     "category": "method",
     "text": "Reverse function for log: y = log(x)\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.max_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.max_rev",
+    "category": "method",
+    "text": "Reverse max\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.min_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.min_rev",
+    "category": "method",
+    "text": "Reverse min\n\n\n\n"
 },
 
 {
@@ -105,6 +225,14 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "index.html#IntervalContractors.sinh_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.sinh_rev",
+    "category": "method",
+    "text": "Reverse function for sinh.\n\n\n\n"
+},
+
+{
     "location": "index.html#IntervalContractors.sqr_rev-Tuple{Any,Any}",
     "page": "Home",
     "title": "IntervalContractors.sqr_rev",
@@ -126,6 +254,14 @@ var documenterSearchIndex = {"docs": [
     "title": "IntervalContractors.tan_rev",
     "category": "method",
     "text": "tan_rev(y::Interval, x::Interval)\n\nReverse function for tan:\n\nfind the subset of x such that y = tan(x) for the given y.\n\n\n\n"
+},
+
+{
+    "location": "index.html#IntervalContractors.tanh_rev-Tuple{IntervalArithmetic.Interval,IntervalArithmetic.Interval}",
+    "page": "Home",
+    "title": "IntervalContractors.tanh_rev",
+    "category": "method",
+    "text": "Reverse function for tanh.\n\n\n\n"
 },
 
 {
