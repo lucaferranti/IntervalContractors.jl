@@ -9,8 +9,8 @@ Reverse plus
 """
 function plus_rev(a::Interval, b::Interval, c::Interval)  # a = b + c
     # a = a ∩ (b + c)  # add this line for plus contractor (as opposed to reverse function)
-    b_new = b ∩ (a - c)
-    c_new = c ∩ (a - b)
+    b_new = b ∩ cancelminus(a, c)  # (a - c)
+    c_new = c ∩ cancelminus(a, b)  # (a - b)
 
     return a, b_new, c_new
 end
@@ -22,8 +22,8 @@ Reverse minus
 """
 function minus_rev(a::Interval, b::Interval, c::Interval)  # a = b - c
 
-    b_new = b ∩ (a + c)
-    c_new = c ∩ (b - a)
+    b_new = b ∩ cancelplus(a, c)  # (a + c)
+    c_new = c ∩ cancelplus(-a, b)  # -a = c - b
 
     return a, b_new, c_new
 end
@@ -54,10 +54,10 @@ Reverse division
 """
 function div_rev(a::Interval, b::Interval, c::Interval)  # a = b / c
 
-    b = b ∩ (a * c)
-    c = c ∩ (b / a)
+    b_new = b ∩ (a * c)
+    c_new = c ∩ (b / a)
 
-    return a, b, c
+    return a, b_new, c_new
 end
 
 div_rev(a,b,c) = div_rev(promote(a,b,c)...)
