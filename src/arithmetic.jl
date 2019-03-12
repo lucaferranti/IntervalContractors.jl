@@ -28,7 +28,8 @@ function minus_rev(a::Interval, b::Interval, c::Interval)  # a = b - c
     return a, b_new, c_new
 end
 
-minus_rev(a,b,c) = minus_rev(promote(a,b,c)...)
+minus_rev(a, b, c) = minus_rev(promote(a, b, c)...)
+minus_rev(a::T, b::T, c::T) where {T} = minus_rev(interval(a), interval(b), interval(c))
 
 function minus_rev(a::Interval, b::Interval)  # a = -b
     b_new = b ∩ (-a)
