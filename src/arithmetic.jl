@@ -42,16 +42,17 @@ function mul_rev(a::Interval, b::Interval, c::Interval)  # a = b * c
     # a = a ∩ (b * c)  # ?
 
     if 0 ∈ b
-        temp = c .∩ extended_div(a, b)
-        c′ = union(temp[1], temp[2])
+
+        division1, division2 = extended_div(a, b)
+        c′ = (c ∩ division1) ∪ (c ∩ division2)
 
     else
         c′ = c ∩ (a / b)
     end
 
     if 0 ∈ c
-        temp = b .∩ extended_div(a, c)
-        b′ = union(temp[1], temp[2])
+        division1, division2 = extended_div(a, c)
+        b′ = (b ∩ division1) ∪ (b ∩ division2)
 
     else
         b′ = b ∩ (a / c)
@@ -60,7 +61,7 @@ function mul_rev(a::Interval, b::Interval, c::Interval)  # a = b * c
     return a, b′, c′
 end
 
-mul_rev(a,b,c) = mul_rev(promote(a,b,c)...)
+mul_rev(a, b, c) = mul_rev(promote(a, b, c)...)
 
 """
 Reverse division
