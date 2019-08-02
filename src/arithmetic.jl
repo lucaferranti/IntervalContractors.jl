@@ -43,16 +43,16 @@ function mul_rev(a::Interval, b::Interval, c::Interval)  # a = b * c
 
     if 0 ∈ b
 
-        division1, division2 = extended_div(a, b)
-        c′ = (c ∩ division1) ∪ (c ∩ division2)
+        division = extended_div(a, b)
+        c′ = (c ∩ division[1]) ∪ (c ∩ division[2])
 
     else
         c′ = c ∩ (a / b)
     end
 
     if 0 ∈ c
-        division1, division2 = extended_div(a, c)
-        b′ = (b ∩ division1) ∪ (b ∩ division2)
+        division = extended_div(a, c)
+        b′ = (b ∩ division[1]) ∪ (b ∩ division[2])
 
     else
         b′ = b ∩ (a / c)
