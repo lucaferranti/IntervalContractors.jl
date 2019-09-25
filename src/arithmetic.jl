@@ -1,4 +1,9 @@
 
+function nthroot(x::Interval, n::Integer)
+    return x^(inv(interval(n)))
+end
+
+
 """
 Reverse plus
 """
@@ -98,14 +103,14 @@ function power_rev(a::Interval, b::Interval, n::Integer)  # a = b^n,  log(a) = n
         b2 = b ∩ (-root)
 
     elseif iseven(n)
-        root = a^(1//n)
+        root = nthroot(a, n)
 
         b1 = b ∩ root
         b2 = b ∩ (-root)
 
     elseif isodd(n)
-        pos_root = (a ∩ (0..∞)) ^ (1//n)
-        neg_root = -( ( (-a) ∩ (0..∞) ) ^ (1//n) )
+        pos_root = nthroot(a ∩ (0..∞), n)
+        neg_root = - nthroot( (-a) ∩ (0..∞), n )
 
         b1 = b ∩ pos_root
         b2 = b ∩ neg_root
