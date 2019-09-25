@@ -90,7 +90,7 @@ inv_rev(a,b) = inv_rev(promote(a,b)...)
 """
 Reverse power
 """
-function power_rev(a::Interval, b::Interval, n::Integer)  # a = b^n,  log(a) = n.log(b),  b = a^(1/n)
+function _power_rev(a::Interval, b::Interval, n::Integer)  # a = b^n,  log(a) = n.log(b),  b = a^(1/n)
 
     if n == 2  # a = b^2
         root = √a
@@ -117,11 +117,16 @@ function power_rev(a::Interval, b::Interval, n::Integer)  # a = b^n,  log(a) = n
     return (a, b, n)
 end
 
+function power_rev(a::Interval, b::Interval, n::Integer)  # a = b^n,  log(a) = n.log(b),  b = a^(1/n)
+    return _power_rev(a, b, n)
+end
+
+
 
 function power_rev(a::Interval, b::Interval, c::Interval)  # a = b^c
 
     if isinteger(c)
-        temp = power_rev(a, b, Int(inf(c)))  # use version with integer
+        temp = _power_rev(a, b, Int(inf(c)))  # use version with integer
         return (temp[1], temp[2], interval(temp[3]))
     end
 
